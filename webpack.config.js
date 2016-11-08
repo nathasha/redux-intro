@@ -13,6 +13,7 @@ module.exports = {
 	// Entry point for the bundle.
 	// Type array : All modules are loaded on startup
 	entry:[
+		'babel-polyfill',
 		'webpack-dev-server/client?http://localhost:8080', // WebpackDevServer host and port
 		'webpack/hot/only-dev-server',
 		paths.src + '/main.jsx'
